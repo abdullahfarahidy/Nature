@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="discription" content="enjoy the beauty of nature ">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <meta name="author" content="Abdallah ahmed">
+    <meta name="keywords" content="scenaries,animals,plants,coasts, water falls,beuty of nature">
+    <title>Nature</title>
+    <link rel="stylesheet" href="Nature.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body onload="alert('Welcome to nature')">
+    <header onmouseenter="console.log('mouse over header')" class="page_header">
+        <div class="header_log"><a href="#" class="loglink"> <em><b><i>Nature</i></b></em></a></div>
+
+    </header>
+    <main class="page_main">
+        <section class="head">
+            <h1><b>Welcome to Nature! <br></b></h1>
+            <div id="abstract">
+                <b>&nbsp;  how wonderful is it to experience the beauty of nature<br> &nbsp; &nbsp;by exploring the amazing sceneries and
+                    gorgous views below</b> 
+            </div>
+        </section>
+
+        <section class="first">
+            <h2><b>&nbsp; Fictional place</b></h2>
+            <img src="Capture.JPG" alt="beautiful house with a purely bewitching river and forest" class="img">
+            <div class="ar"><abbr title="means true place">Fictional place</abbr> is a place of happiness and visual pleasure </div>
+        </section>
+        <section class="second">
+            <h2 ><b>&nbsp;Relax bridge</b></h2>
+            <img src="bridge-53769_960_720.jpg" alt="beautiful bridge" class="img">
+            <div class="ar"><b>Relax bridge</b> experience is so relaxing </div>
+        </section>
+        <section class="third">
+            <h2><b>&nbsp;The magic of sunset</b></h2>
+            <img src="sunset-g28c3b3c87_1920.jpg" alt="beautiful sunset" class="img">
+            <div class="ar"><b>The magic of sunset</b> relies in rare places <br> like this </div>
+        </section>
+        <script>
+            $(document).ready(function(){
+                $(window).bind('scroll',function(){
+                  var grap = 50;
+                  if($(window).scrollTop() > grap){
+                    $('header').css("opacity","0.3");
+                  }else{
+                    $('header').css("opacity","1.0");
+                  }
+                }); 
+            });
+        </script>
+        <section class="fourth">
+            <h2><b>&nbsp;The epic tree</b></h2>
+            <img src="tree-g95a6a9ca1_1280.jpg" alt="beautiful tree" class="img">
+        
+            <div class="ar"><b>The epic tree</b> is the one that grows independently</div>
+        </section>
+        <section class="vids">
+            <h2><b>&nbsp; Jungle water</b></h2>
+            <video src="stock-footage-nature-river-waterfall-forest-sun-morning-magical.webm" width="100%" height="100%" controls></video>
+        </section>
+        <section class="vids">
+            <h2><b>&nbsp;Fish are playing</b></h2>
+            <video src="stock-footage-silversides-hiding-behind-secret-rocks-under-sun-shine-and-beams-underwater-silverside-fish-school.webm" width="100%" height="100%" controls></video>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="cont">
+            <div class="footd">
+                <a href="#">Contacts</a>
+                <a href="#">Adminstration</a>
+            </div>
+            <div class="footd">
+                <a href="#">Services</a>
+                <a href="#">Privacy&Policy</a>
+            </div>
+        </div>
+        <p>&copy Abdallah ahmed</p>
+    </footer>
+    <script src="Nature.js"></script>
+</body>
+
+</html>
